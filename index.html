@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/0b909bca73.js" crossorigin="anonymous"></script>
+	<title></title>
+	<style type="text/css">
+		/*Simple demo in navigation bar*/
+		.simple{
+			font-size: 20px;
+			margin-right: 8%;
+
+		}
+		/*navigation bar*/
+		.navigation{
+			font-size: 10px;
+			font-weight: bold;
+			border: 1px solid lightgray;
+			border-right-style: none;
+			border-left-style: none;
+			border-top-style: none;
+			padding: 1% 3%;
+			box-shadow: 0px 5px 0px whitesmoke;
+		}
+		/*for decorating anchor tags in navigation bar*/
+		.navigation a{
+			font-family: sans-serif;
+			color: black;
+			text-decoration: none;
+			text-transform: capitalize;
+			padding-right: 0.5%;
+		}
+		/*for welcome box*/
+		.box{
+			color: white;
+			font-family: sans-serif;
+			background-image: linear-gradient(to right, #1a1e1f, #2da4ff);
+			border-color: blue;
+			text-align: center;
+			padding: 5% 5%;
+			margin: 5% 10%;
+		}
+		/*for button*/
+		.button{
+			color: white;
+			background-color: #2da4ff;
+			border: 2px solid white;
+			padding: 2% 5%;
+		}
+		/*for welcome next box*/
+		.box2{
+			background-color: whitesmoke;
+			text-align: center;
+			padding: 3% 28%;
+			font-size: 20px;
+		}
+		/*for content without background*/
+		.content{
+			margin: 5% 9%;
+		}
+		.content1{
+			text-align: center;
+			padding: 1% 2%;
+		}
+		/*for insert icon*/
+		.circle{
+			font-size: 33px;
+			width: 45px;
+			height: 45px;
+			border: 2px solid grey;
+			border-radius: 100%;
+			padding: 4% 2% 0% 2%;
+			margin: auto;
+		}
+		/*for bottom box*/
+		.bottombox{
+			color: white;
+			background-image: linear-gradient(to right, #1e1e1f, #2da4ff);;
+			border-color: blue;
+			text-align: center;
+			font-family: sans-serif;
+			padding: 1% 5%;
+			margin: 5% 10%;
+		}
+		/*for bottom navigation bar*/
+		.botnav{
+			background-color: black;
+			padding: 1% 0%;
+		}
+		/*for decorating the anchor tags in botnav*/
+		.botnav a{
+			font-size: 13px;
+			color: grey;
+			text-decoration: none;
+			padding-left:1%;
+		}
+		.bot{
+			padding-right: 65%;
+			padding-left: 10%;
+		}
+		/*mobile view*/
+		@media (max-width: 768px) and (min-width: 576px){
+			.navigation{
+				font-size: 7px;
+				text-align: center;
+				margin: auto;
+
+			}
+			.navigation a{
+				display: block;
+				padding: 1%;
+			}
+			.simple{
+				font-size: 20px;
+				text-decoration: underline !important;
+				margin: auto;
+			}
+			.box{
+				font-size: 10px;
+			}
+			.box2{
+				font-size: 12px;
+			}
+			.content{
+				font-size: 12px;
+			}
+			.circle{
+				width: 25px;
+				height: 25px;
+				font-size: 20px;
+			}
+			.bottombox{
+				font-size: 10px;
+			}
+			.botnav a{
+				font-size: 7px;
+			}
+			.button{
+				font-size: 10px;
+			}
+		}
+		@media(max-width: 480px){
+			.navigation{
+				font-size: 5px;
+				text-align: center;
+			}
+			.simple{
+				font-size: 10px;
+				text-decoration: underline !important;
+				margin: auto;
+			}
+			.navigation a{
+				display: block;
+				padding: 0.5%;
+			}
+			.box{
+				font-size: 6px;
+			}
+			.box2{
+				font-size: 7px;
+			}
+			.content{
+				font-size: 6px;
+			}
+			.circle{
+				width: 15px;
+				height: 15px;
+				font-size: 10px;
+			}
+			.bottombox{
+				font-size: 6px;
+			}
+			.button{
+				font-size: 6px;
+			}
+			.botnav a{
+				font-size: 5px}
+		}
+		/*Tablet view*/
+		@media(max-width: 992px) and (min-width: 768px){
+			.navigation{
+				font-size: 10px;
+				text-align: center;
+				margin: auto;
+
+			}
+			.navigation a{
+				display: block;
+				padding: 1%;
+			}
+			.simple{
+				text-decoration: underline !important;
+				font-size: 20px;
+				margin: auto;
+			}
+			.box{
+				font-size: 13px;
+			}
+			.box2{
+				font-size: 15px;
+			}
+			.bottombox{
+				font-size: 13px;
+			}
+			.botnav a{
+				font-size: 10px;
+			}
+			.button{
+				font-size: 10px;
+			}
+		}
+		/*Laptop or desktop view*/
+		@media (max-width: 1200px) and (min-width: 992px){
+			.navigation{
+				font-size: 10px;
+				text-align: center;
+				margin: auto;
+			}
+			.simple{
+				font-size: 13px;
+				margin-right: 1%;
+			}
+		}
+		/*Big screen view*/
+		@media (max-width: 1366px) and (min-width: 1200px){
+			.navigation{
+				font-size: 12px;
+				text-align: center;
+			}
+			.simple{
+				font-size: 17px;
+				margin-right: 2%;
+			}
+		}
+		/*extra small screen view*/
+		@media(max-width: 576px) and (min-width: 480px){
+			.navigation{
+				font-size: 5px;
+				text-align: center;
+			}
+			.simple{
+				font-size: 10px;
+				text-decoration: underline !important;
+				margin: auto;
+			}
+			.navigation a{
+				display: block;
+				padding: 0.5%;
+			}
+			.box{
+				font-size: 10px;
+			}
+			.box2{
+				font-size: 10px;
+			}
+			.content{
+				font-size: 10px;
+			}
+			.circle{
+				width: 20px;
+				height: 20px;
+				font-size: 15px;
+			}
+			.bottombox{
+				font-size: 10px;
+			}
+			.button{
+				font-size: 10px;
+			}
+			.botnav a{
+				font-size: 6px}
+		}
+	</style>
+</head>
+<body>
+	<section class="navigation">
+		<a href="" class="simple">simple home page live demo</a>
+		<a href="">Home</a>
+		<a href="">About Me</a>
+		<a href="">About Us</a>
+		<a href="">Blog</a>
+		<a href="">Contact Us</a>
+		<a href="">Portfollo</a>
+		<a href="">Project</a>
+		<a href="">Basic Layouts <i class="fas fa-chevron-down"></i></a>
+		<a href="">Sales</a>
+		<a href="">Shop</a>
+		<a href="">Maintenance Mode</a>
+		<a href="">Comming Soon</a>
+		<a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+	</section>
+
+	<div class="box">
+		<h1>Welcome To My Website</h1>
+		<p>Lorem ipsum dolor slt amet, consectetur adipiscing elit. In in risus eget lectus suscripit malesuada. Maecenas ut urna mollis, aliquam eros at, laoreet metus.</p>
+		<button class="button">Enter</button>
+	</div>
+
+	<div class="box2">
+		<p>we are a company of passionate designers and developers</p>
+	</div>
+
+	<div class="content">
+		<div style="display:flex">
+			<div class="content1">
+				<div class="circle">
+					<i class="fa-solid fa-shield"></i>
+				</div>
+				<h4>Lorem Ipsum</h4>
+				<p>Divi will change the way you build websites forever. The advanced page builder makes it possible to build truly dynamic pages without learning code</p>
+			</div>
+
+			<div class="content1">
+				<div class="circle">
+					<i class="fa-solid fa-location-dot"></i>
+				</div>
+				<h4>Lorem Ipsum</h4>
+				<p>Divi will change the way you build websites forever. The advanced page builder makes it possible to build truly dynamic pages without learning code</p>
+			</div>
+
+			<div class="content1">
+				<div class="circle">
+					<i class="fa-solid fa-comment"></i>
+				</div>
+				<h4>Lorem Ipsum</h4>
+				<p>Divi will change the way you build websites forever. The advanced page builder makes it possible to build truly dynamic pages without learning code</p>
+			</div>
+
+			<div class="content1">
+				<div class="circle">
+					<i class="fa-solid fa-sliders"></i>
+				</div>
+				<h4>Lorem Ipsum</h4>
+				<p>Divi will change the way you build websites forever. The advanced page builder makes it possible to build truly dynamic pages without learning code</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="bottombox">
+		<h3>Drop Me a Line</h3>
+		<p>Lorem ipsum dolor slt amet, consectetur adipiscing elit. In in risus eget lectus suscripit malesuada. Maecenas ut urna mollis, aliquam eros at, laoreet metus.</p>
+		<button class="button">Contact</button>
+	</div>
+
+	<div class="botnav">
+		<a href="" class="bot">Designed by <strong>Bhanu</strong> | Powered by <strong>Codegnan</strong></a>
+		<a href=""><i class="fa-brands fa-facebook"></i></a>
+		<a href=""><i class="fa-brands fa-twitter"></i></a>
+		<a href=""><i class="fa-solid fa-wifi"></i></a>
+	</div>
+</body>
+</html>
