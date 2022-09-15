@@ -78,7 +78,7 @@
 		/*for bottom navigation bar*/
 		.botnav{
 			background-color: black;
-			padding: 1% 0%;
+			padding: 1%;
 		}
 		/*for decorating the anchor tags in botnav*/
 		.botnav a{
@@ -163,11 +163,21 @@
 			.bottombox{
 				font-size: 6px;
 			}
-			.button{
-				font-size: 6px;
+			.bot{
+				font-size: 12px !important;
+				display: block;
+				text-decoration: underline !important;
+				text-decoration-color: white !important;
+				padding-right: 1% !important;
 			}
 			.botnav a{
-				font-size: 5px}
+				text-align: center;
+				font-size: 10px;
+			}
+			.botnav{
+				text-align: center;
+				margin: auto;
+			}
 		}
 		/*Tablet view*/
 		@media(max-width: 992px) and (min-width: 768px){
