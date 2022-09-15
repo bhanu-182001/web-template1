@@ -129,7 +129,8 @@
 				font-size: 7px;
 			}
 			.button{
-				font-size: 10px;
+				border: 1px solid white !important;
+				font-size: 10px !important;
 			}
 		}
 		@media(max-width: 480px){
