@@ -179,6 +179,9 @@
 				text-align: center;
 				margin: auto;
 			}
+			.button{
+				font-size: 5px;
+			}
 		}
 		/*Tablet view*/
 		@media(max-width: 992px) and (min-width: 768px){
