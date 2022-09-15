@@ -156,6 +156,7 @@
 				font-size: 6px;
 			}
 			.circle{
+				border: 0.5px solid black;
 				width: 15px;
 				height: 15px;
 				font-size: 10px;
